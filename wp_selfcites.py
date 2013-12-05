@@ -50,7 +50,7 @@ def get_color(author):
   return (255,255,255)
 
 
-if __name__ == "__main__":
+def main():
   gexf = Gexf("Politikon","Autoreferences graph")
   graph=gexf.addGraph("directed","static","a hello world graph")
 
@@ -81,3 +81,7 @@ if __name__ == "__main__":
       
   output_file=open(GEXF_OUTPUT_FILE,"w")
   gexf.write(output_file)
+
+
+if __name__ == "__main__":
+  main()
